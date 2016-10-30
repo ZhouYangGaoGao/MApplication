@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="reference|dimension" />
+        <attr name="roundHeight" format="reference|dimension" />
+        <attr name="sideWidth" format="reference|dimension" />
+        <attr name="sideColor" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="TopBar">
+        <attr name="L1src" format="reference|color" />
+        <attr name="L2src" format="reference|color" />
+        <attr name="R1src" format="reference|color" />
+        <attr name="CSrc" format="reference|color" />
+        <attr name="R2src" format="reference|color" />
+        <attr name="CT" format="reference|string" />
+        <attr name="LT" format="reference|string" />
+        <attr name="RT" format="reference|string" />
+        <attr name="Tsize" format="dimension" />
+        <attr name="Tcolor" format="color" />
+        <attr name="ImgWidth" format="dimension" />
+        <attr name="isFinish" format="boolean" />
+        <attr name="T1" format="reference|string" />
+        <attr name="T2" format="reference|string" />
+        <attr name="T3" format="reference|string" />
+        <attr name="T4" format="reference|string" />
+        <attr name="T5" format="reference|string" />
+        <attr name="SelectTLineSrc" format="reference|color" />
+        <attr name="SelectTcolor" format="color" />
+        <attr name="SelectTsize" format="dimension" />
+        <attr name="SelectTcolorUn" format="color" />
+    </declare-styleable>
+    <declare-styleable name="TipBar">
+        <attr name="Lsrc" format="reference|color" />
+        <attr name="Rsrc" format="reference|color" />
+        <attr name="src" format="reference|color" />
+        <attr name="t" format="reference|string" />
+        <attr name="Lt" format="reference|string" />
+        <attr name="Rt" format="reference|string" />
+    </declare-styleable>
+    <!--<declare-styleable name="SelectBar">-->
+        <!--<attr name="T1" format="reference|string" />-->
+        <!--<attr name="T2" format="reference|string" />-->
+        <!--<attr name="T3" format="reference|string" />-->
+        <!--<attr name="T4" format="reference|string" />-->
+        <!--<attr name="T5" format="reference|string" />-->
+        <!--<attr name="LineSrc" format="reference|color" />-->
+        <!--<attr name="color" format="color" />-->
+        <!--<attr name="size" format="dimension" />-->
+        <!--<attr name="colorUn" format="color" />-->
+    <!--</declare-styleable>-->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+</resources>

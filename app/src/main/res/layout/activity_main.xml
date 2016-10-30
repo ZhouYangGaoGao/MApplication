@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gaogao.mapplication.view.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:L1src="@drawable/shape_dot_ff4665"
+        app:L2src="@drawable/shape_dot_ffac3f"
+        app:LT="左"
+        app:isFinish="true"
+        app:CT="中间"
+        app:T1="活动"
+        app:T2="场地"
+        app:CSrc="@drawable/shape_dot_ffffff"
+        app:R1src="@drawable/shape_dot_51c4ff"
+        app:R2src="@drawable/shape_dot_ffac3f"
+        app:RT="右" />
+
+    <com.gaogao.mapplication.view.SelectBar
+        android:id="@+id/selectbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:T1="视频"
+        app:T2="音乐"
+        app:T3="杂志"
+        app:T4="场地"
+        app:T5="活动" />
+
+    <include layout="@layout/listviewpull" />
+</LinearLayout>
