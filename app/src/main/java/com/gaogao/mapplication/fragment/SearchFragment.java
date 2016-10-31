@@ -1,10 +1,12 @@
 package com.gaogao.mapplication.fragment;
 
+import android.content.Context;
 import android.support.v4.view.GravityCompat;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,6 +24,8 @@ import com.gaogao.mapplication.view.TopBar;
 import com.gaogao.mapplication.view.TopListener;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
+
+import org.xutils.common.util.LogUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +47,7 @@ public class SearchFragment extends MFragment implements PullToRefreshBase.OnRef
 
     @Override
     public View setContenView(LayoutInflater inflater) {
-        return inflater.inflate(R.layout.fragment_column, null);
+        return inflater.inflate(R.layout.fragment_search, null);
     }
 
     @Override
@@ -62,7 +66,7 @@ public class SearchFragment extends MFragment implements PullToRefreshBase.OnRef
 
             @Override
             public void r1Click() {
-                //右边 点击事件
+                editText.setText("");
             }
         });
 
@@ -83,6 +87,7 @@ public class SearchFragment extends MFragment implements PullToRefreshBase.OnRef
         listView.setAdapter(adapter);
         data.clear();
         editText = (EditText) findViewById(R.id.search_editText);
+        LogUtil.e("" + (editText == null));
         editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             public boolean onEditorAction(TextView v, int actionId,
                                           KeyEvent event) {
@@ -91,6 +96,7 @@ public class SearchFragment extends MFragment implements PullToRefreshBase.OnRef
                         || (event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
                     //你可以先判断为不为空 再搜索
                     getData(keyWord = editText.getText().toString().trim());
+                    KeyBoardCancle();
                     return true;
                 }
                 return false;
@@ -116,7 +122,7 @@ public class SearchFragment extends MFragment implements PullToRefreshBase.OnRef
     }
 
     private void getData(String keyWord) {
-        Request.post(Urls.COLUMN, "search", this, "keyword", keyWord, "page", page + "");
+        Request.post(Urls.SEARCH, "search", this, "keyword", keyWord, "page", page + "");
     }
 
     @Override
@@ -130,5 +136,17 @@ public class SearchFragment extends MFragment implements PullToRefreshBase.OnRef
     public void onPullUpToRefresh(PullToRefreshBase refreshView) {
         page++;
         getData(keyWord);
+    }
+
+    /**
+     * 隐藏 软键盘
+     */
+    public void KeyBoardCancle() {
+        View view = getActivity().getWindow().peekDecorView();
+        if (view != null) {
+            InputMethodManager inputmanger = (InputMethodManager)
+                    getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+            inputmanger.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
     }
 }
