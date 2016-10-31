@@ -149,4 +149,9 @@ public class SearchFragment extends MFragment implements PullToRefreshBase.OnRef
             inputmanger.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
+
+    @Override
+    public void onPause() {
+        KeyBoardCancle();
+    }
 }
