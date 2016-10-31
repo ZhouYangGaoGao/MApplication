@@ -12,4 +12,10 @@ public class Urls {
     public static String TICKETLIST = IP + "/api3/index_list";
     public static String SHIPIN = TIP2 + "/info/foucs/homePage";
 
+
+    //首页：
+    public static String HOME = "http://dailyapi.ibaozou.com/api/v31/documents/latest";
+    //视频：
+    public static String VIDIO = "http://dailyapi.ibaozou.com/api/v31/documents/videos/latest";
+
 }

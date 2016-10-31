@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gaogao.mapplication.view.TopBar
+        android:id="@+id/home_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aa0022"
+        app:L1src="@mipmap/icon_sidebar_column"
+        app:LT="    排行榜"
+        app:RT="今天" />
+
+    <com.gaogao.mapplication.view.SelectBar
+        android:id="@+id/home_selectbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:SelectTLineSrc="#ff0000"
+        app:SelectTcolor="#ff0000"
+        app:SelectTcolorUn="#ff0000"
+        app:T1="阅读"
+        app:T2="赞"
+        app:T3="评论" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -2,6 +2,7 @@ package com.gaogao.mapplication;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -18,7 +19,7 @@ import org.xutils.x;
  * 由 周洋 创建于 2016/10/28 下午8:13
  * 用途 :activity基础类
  */
-public abstract class MActivity extends FragmentActivity implements MListener, View.OnClickListener {
+public abstract class MActivity extends AppCompatActivity implements MListener, View.OnClickListener {
     public MAdapter adapter;
     public SelecteUtil slu;
 
