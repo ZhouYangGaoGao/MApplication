@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import com.gaogao.mapplication.MActivity;
 import com.gaogao.mapplication.R;
 import com.gaogao.mapplication.fragment.ChartsFragment;
+import com.gaogao.mapplication.fragment.ColumnFragment;
 import com.gaogao.mapplication.fragment.HomeFragment;
 
 import org.xutils.view.annotation.ContentView;
@@ -25,6 +26,7 @@ public class BaoZouActivity extends MActivity implements NavigationView.OnNaviga
     private FragmentManager manager;
     private HomeFragment homeFragment;
     private ChartsFragment chartsFragment;
+    private ColumnFragment columnFragment;
 
     @Override
     public void initView() {
@@ -42,9 +44,10 @@ public class BaoZouActivity extends MActivity implements NavigationView.OnNaviga
                 manager.beginTransaction().replace(R.id.fragmentRoot, homeFragment).commitAllowingStateLoss();
                 break;
             case R.id.nav_charts:
-                manager.beginTransaction().replace(R.id.fragmentRoot, chartsFragment==null?new ChartsFragment():chartsFragment).commitAllowingStateLoss();
+                manager.beginTransaction().replace(R.id.fragmentRoot, chartsFragment == null ? new ChartsFragment() : chartsFragment).commitAllowingStateLoss();
                 break;
             case R.id.nav_channel:
+                manager.beginTransaction().replace(R.id.fragmentRoot, columnFragment == null ? new ColumnFragment() : columnFragment).commitAllowingStateLoss();
                 break;
             case R.id.nav_search:
                 break;

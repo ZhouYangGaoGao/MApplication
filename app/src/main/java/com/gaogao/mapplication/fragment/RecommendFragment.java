@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * 邮件: ZhouYangGaoGao@163.com
  * 由 周洋 创建于 2016/10/31 下午6:21
- * 用途 :
+ * 用途 :推荐页
  */
 public class RecommendFragment extends MFragment {
     private PullToRefreshListView listView;

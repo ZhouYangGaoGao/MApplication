@@ -69,7 +69,7 @@ public class SelectBar extends LinearLayout {
         itemlp = new LayoutParams(0, sp2px(44), 1);
         textlp = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
         textlp.setMargins(0, sp2px(4), 0, sp2px(4));
-        linelp = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dip2px(2));
+        linelp = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dip2px(4));
 
         addText(t1, ts, tc, line, true);
         addText(t2, ts, tcUn, line, false);
