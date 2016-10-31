@@ -12,6 +12,7 @@ import com.gaogao.mapplication.R;
 import com.gaogao.mapplication.fragment.ChartsFragment;
 import com.gaogao.mapplication.fragment.ColumnFragment;
 import com.gaogao.mapplication.fragment.HomeFragment;
+import com.gaogao.mapplication.fragment.SearchFragment;
 
 import org.xutils.view.annotation.ContentView;
 
@@ -27,6 +28,7 @@ public class BaoZouActivity extends MActivity implements NavigationView.OnNaviga
     private HomeFragment homeFragment;
     private ChartsFragment chartsFragment;
     private ColumnFragment columnFragment;
+    private SearchFragment searchFragment;
 
     @Override
     public void initView() {
@@ -50,6 +52,7 @@ public class BaoZouActivity extends MActivity implements NavigationView.OnNaviga
                 manager.beginTransaction().replace(R.id.fragmentRoot, columnFragment == null ? new ColumnFragment() : columnFragment).commitAllowingStateLoss();
                 break;
             case R.id.nav_search:
+                manager.beginTransaction().replace(R.id.fragmentRoot, searchFragment == null ? new SearchFragment() : searchFragment).commitAllowingStateLoss();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

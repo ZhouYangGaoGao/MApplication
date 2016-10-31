@@ -25,5 +25,7 @@ public class Urls {
     public static String COMMENT = "http://dailyapi.ibaozou.com/api/v31/rank/comment/week";
     //栏目
     public static String COLUMN = "http://dailyapi.ibaozou.com/api/v31/channels/index?per_page=10&";
+    //搜索
+    public static String SEARCH = "http://dailyapi.ibaozou.com/api/v31/documents/search";
 
 }
