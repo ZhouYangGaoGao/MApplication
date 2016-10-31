@@ -17,5 +17,13 @@ public class Urls {
     public static String HOME = "http://dailyapi.ibaozou.com/api/v31/documents/latest";
     //视频：
     public static String VIDIO = "http://dailyapi.ibaozou.com/api/v31/documents/videos/latest";
+    //阅读
+    public static String READ = "http://dailyapi.ibaozou.com/api/v31/rank/read/week";
+    //赞
+    public static String VOTE = "http://dailyapi.ibaozou.com/api/v31/rank/vote/week";
+    //评论
+    public static String COMMENT = "http://dailyapi.ibaozou.com/api/v31/rank/comment/week";
+    //栏目
+    public static String COLUMN = "http://dailyapi.ibaozou.com/api/v31/channels/index?per_page=10&";
 
 }

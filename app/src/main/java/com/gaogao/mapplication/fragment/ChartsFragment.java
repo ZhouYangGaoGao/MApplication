@@ -39,8 +39,13 @@ public class ChartsFragment extends MFragment {
                     activity.drawer.openDrawer(GravityCompat.START);
                 }
             }
+
+            @Override
+            public void rTClick() {
+                //点击 今天选项。。。
+            }
         });
         selectBar = (SelectBar) findViewById(R.id.home_selectbar);
-        selectBar.withViewPager(findViewById(R.id.home_viewpager), getChildFragmentManager(), new RecommendFragment(), new VideoFragment(), new TextFragment());
+        selectBar.withViewPager(findViewById(R.id.home_viewpager), getChildFragmentManager(), new ReadFragment(0), new ReadFragment(1), new ReadFragment(2));
     }
 }
