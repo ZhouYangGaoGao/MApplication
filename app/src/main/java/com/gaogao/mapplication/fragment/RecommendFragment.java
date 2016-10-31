@@ -77,7 +77,7 @@ public class RecommendFragment extends MFragment {
             TextView tv = (TextView) v.findViewById(R.id.item_home_pager_dsc);
             tv.setText(topBean.get(i).getTitle());
             ImageView img = (ImageView) v.findViewById(R.id.item_home_pager_img);
-            setImgUrl(img, topBean.get(i).getThumbnail());
+            setImgUrl(img, topBean.get(i).getImage());
             pagers.add(v);
         }
         slu.notifyDataSetChanged(pagers);
