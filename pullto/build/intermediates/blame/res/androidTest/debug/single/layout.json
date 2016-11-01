@@ -1,13 +1,5 @@
 [
     {
-        "merged": "/Users/zhengzai/zhouyang/MApplication/pullto/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_vertical.xml",
-        "source": "/Users/zhengzai/zhouyang/MApplication/pullto/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_vertical.xml"
-    },
-    {
-        "merged": "/Users/zhengzai/zhouyang/MApplication/pullto/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_horizontal.xml",
-        "source": "/Users/zhengzai/zhouyang/MApplication/pullto/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_horizontal.xml"
-    },
-    {
         "merged": "/Users/yangyang/Downloads/MApplication/pullto/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_vertical.xml",
         "source": "/Users/yangyang/Downloads/MApplication/pullto/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_vertical.xml"
     },
