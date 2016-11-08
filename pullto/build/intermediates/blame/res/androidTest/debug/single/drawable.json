@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/zhengzai/zhouyang/MApplication/pullto/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_top.xml",
-        "source": "/Users/zhengzai/zhouyang/MApplication/pullto/build/intermediates/bundles/debug/res/drawable/indicator_bg_top.xml"
+        "merged": "/Users/yangyang/Downloads/MApplication/pullto/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
+        "source": "/Users/yangyang/Downloads/MApplication/pullto/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml"
     },
     {
-        "merged": "/Users/zhengzai/zhouyang/MApplication/pullto/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
-        "source": "/Users/zhengzai/zhouyang/MApplication/pullto/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml"
+        "merged": "/Users/yangyang/Downloads/MApplication/pullto/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_top.xml",
+        "source": "/Users/yangyang/Downloads/MApplication/pullto/build/intermediates/bundles/debug/res/drawable/indicator_bg_top.xml"
     }
 ]

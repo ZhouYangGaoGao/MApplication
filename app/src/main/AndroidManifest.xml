@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.BaoZouActivity"
             android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".activity.HahaActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

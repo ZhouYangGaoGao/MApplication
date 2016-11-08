@@ -16,21 +16,23 @@ public class Request {
         x.http().post(params, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
+                                        listener.onSuccess(tag, result);
+
                 L.i("post.onSuccess<======" + result);
-                try {
-                    JSONObject object = new JSONObject(result);
-                    // 请求成功
-                    if ((result.contains("code") && object.getInt("code") == 200) || (result.contains("status") && object.getInt("status") == 1)) {
-                        listener.onSuccess(tag, result);
-                        // 请求失败
-                    } else {
-                        listener.onException(tag, result);
-                    }
-                } catch (JSONException e) {
-                    // 服务器出现异常
-                    listener.onException(tag, result);
-                    e.printStackTrace();
-                }
+//                try {
+//                    JSONObject object = new JSONObject(result);
+//                    // 请求成功
+//                    if ((result.contains("code") && object.getInt("code") == 200) || (result.contains("status") && object.getInt("status") == 1)) {
+//                        listener.onSuccess(tag, result);
+//                        // 请求失败
+//                    } else {
+//                        listener.onException(tag, result);
+//                    }
+//                } catch (JSONException e) {
+//                    // 服务器出现异常
+//                    listener.onException(tag, result);
+//                    e.printStackTrace();
+//                }
             }
 
             @Override
@@ -100,6 +102,5 @@ public class Request {
 
 
     }
-
 
 }
