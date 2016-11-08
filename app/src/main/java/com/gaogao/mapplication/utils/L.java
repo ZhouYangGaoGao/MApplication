@@ -8,8 +8,25 @@ import android.util.Log;
  * 用途 :
  */
 public class L {
+    private static boolean isDebug = true;
 
     public static void i(String msg) {
-        Log.i("=========>", msg);
+        if (isDebug)
+            Log.i("=========>", msg);
+    }
+
+    public static void e(String msg) {
+        if (isDebug)
+            Log.e("=========>", msg);
+    }
+
+    public static void d(String msg) {
+        if (isDebug)
+            Log.d("=========>", msg);
+    }
+
+    public static void w(String msg) {
+        if (isDebug)
+            Log.w("=========>", msg);
     }
 }
