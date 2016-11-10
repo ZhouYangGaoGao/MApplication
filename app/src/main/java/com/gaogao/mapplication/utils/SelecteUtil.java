@@ -173,6 +173,7 @@ public class SelecteUtil implements View.OnClickListener, ViewPager.OnPageChange
 
                     }
                 } else {
+                    L.e("参数必须为2的整数倍");
                 }
                 break;
         }
@@ -190,7 +191,6 @@ public class SelecteUtil implements View.OnClickListener, ViewPager.OnPageChange
      */
     public SelecteUtil startAutoScrollViewPager(View autoScrollViewPager, List<View> views, View dotLayout) {
         mAutoScrollViewPager = (AutoScrollViewPager) autoScrollViewPager;
-
         this.dotLayout = (LinearLayout) dotLayout;
         pagerViews = views;
         initDot(autoScrollViewPager.getContext());
@@ -207,7 +207,6 @@ public class SelecteUtil implements View.OnClickListener, ViewPager.OnPageChange
             mAutoScrollViewPager.setCurrentItem(1);
         }
         initDot(mAutoScrollViewPager.getContext());
-
     }
 
     /**

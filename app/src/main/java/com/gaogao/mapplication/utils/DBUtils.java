@@ -7,9 +7,9 @@ import com.gaogao.mapplication.MApplication;
 
 
 /**
- * Created by zxm on 2015/1/25.
+ *存储
  */
-public class PreferencesUtils {
+public class DBUtils {
     private static SharedPreferences spf = MApplication.getApplication().getSharedPreferences("AppName", Context.MODE_PRIVATE);
 
     public static void save(String tag, String value) {

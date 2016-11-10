@@ -72,7 +72,7 @@ public abstract class MAdapter<T> extends BaseAdapter {
         return ViewHolder.get(mContext, convertView, parent, mItemLayoutId, position);
     }
 
-    static class ViewHolder {
+    public static class ViewHolder {
         private final SparseArray<View> mViews;
         private int mPosition;
         private View mConvertView;

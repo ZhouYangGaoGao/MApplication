@@ -11,6 +11,10 @@ import com.gaogao.mapplication.MApplication;
  */
 public class T {
     public static void L(Object msg) {
-        Toast.makeText(MApplication.getApplication(), msg.toString(), Toast.LENGTH_LONG).show();
+        Toast.makeText(MApplication.getApplication(), msg + "", Toast.LENGTH_LONG).show();
+    }
+
+    public static void S(Object msg) {
+        Toast.makeText(MApplication.getApplication(), msg + "", Toast.LENGTH_SHORT).show();
     }
 }

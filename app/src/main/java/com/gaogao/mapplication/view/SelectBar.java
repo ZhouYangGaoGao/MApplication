@@ -64,12 +64,12 @@ public class SelectBar extends LinearLayout {
         tc = t.getColor(R.styleable.TopBar_SelectTcolor, 0xff51c4ff);
         tcUn = t.getColor(R.styleable.TopBar_SelectTcolorUn, 0xff616161);
         t.recycle();
-        llp = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        llp = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
         llp.setMargins(dip2px(5), 0, dip2px(5), 0);
         itemlp = new LayoutParams(0, sp2px(44), 1);
-        textlp = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        textlp = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         textlp.setMargins(0, sp2px(4), 0, sp2px(4));
-        linelp = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dip2px(4));
+        linelp = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dip2px(2));
 
         addText(t1, ts, tc, line, true);
         addText(t2, ts, tcUn, line, false);

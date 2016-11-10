@@ -10,23 +10,23 @@ import android.util.Log;
 public class L {
     private static boolean isDebug = true;
 
-    public static void i(String msg) {
+    public static void i(Object msg) {
         if (isDebug)
-            Log.i("=========>", msg);
+            Log.i("=========>", msg + "");
     }
 
-    public static void e(String msg) {
+    public static void e(Object msg) {
         if (isDebug)
-            Log.e("=========>", msg);
+            Log.e("=========>", msg + "");
     }
 
-    public static void d(String msg) {
+    public static void d(Object msg) {
         if (isDebug)
-            Log.d("=========>", msg);
+            Log.d("=========>", msg + "");
     }
 
-    public static void w(String msg) {
+    public static void w(Object msg) {
         if (isDebug)
-            Log.w("=========>", msg);
+            Log.w("=========>", msg + "");
     }
 }

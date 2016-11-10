@@ -25,28 +25,35 @@ public abstract class MFragment extends Fragment implements MListener {
     public MAdapter adapter;
     public SelecteUtil slu;
     public View v;
-
+    private boolean injected = false;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = setContenView(inflater);
+        injected = true;
+        return x.view().inject(this, inflater, container);
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        if (!injected) {
+            x.view().inject(this, this.getView());
+        }
+
+        v = view;
         initView();
-        x.view().inject(this, v);
-        return v;
     }
 
     public View findViewById(int id) {
         return v.findViewById(id);
     }
 
-    public abstract View setContenView(LayoutInflater inflater);
-
     public void get(String url, String tag, String... parameter) {
         Request.get(url, tag, this, parameter);
     }
 
     public void post(String url, String tag, String... bodys) {
-        Request.get(url, tag, this, bodys);
+        Request.post(url, tag, this, bodys);
     }
 
     public abstract void initView();
