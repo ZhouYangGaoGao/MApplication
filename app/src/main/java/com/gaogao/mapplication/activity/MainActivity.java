@@ -34,7 +34,7 @@ public class MainActivity extends MActivity {
     @ViewInject(value = R.id.selectbar)
     private SelectBar selectbar;
     private int[] resIds = {R.drawable.shape_dot_ff4665, R.drawable.shape_dot_ffffff, R.drawable.shape_dot_ffac3f, R.drawable.shape_dot_red, R.drawable.shape_dot_51c4ff};
-    List<String> strs = new ArrayList<>();
+    private List<String> strs = new ArrayList<>();
     @ViewInject(value = R.id.gft)
     private AVLoadingIndicatorView gft;
     @Override

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/MApplication.iml" filepath="$PROJECT_DIR$/MApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/pullto/pullto.iml" filepath="$PROJECT_DIR$/pullto/pullto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zan/zan.iml" filepath="$PROJECT_DIR$/zan/zan.iml" />
     </modules>
   </component>
 </project>
